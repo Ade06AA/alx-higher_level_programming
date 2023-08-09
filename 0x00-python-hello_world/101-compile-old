@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+echo Compiling $PYFILE ...
+if [ -d __pycache__ ]; then
+	mv __pycache__ __t.pycache__;
+	python3 -m py_compile $PYFILE; mv __pycache__/* "$PYFILE"c; rm -r __pycache__;
+	mv __t.pycache__ __pycache__; chmod +x "$PYFILE"c
+else
+	python3 -m py_compile $PYFILE; mv __pycache__/* "$PYFILE"c; rm -r __pycache__; chmod +x "$PYFILE"c
+fi
+
+
