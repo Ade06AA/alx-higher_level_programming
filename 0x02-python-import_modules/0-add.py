@@ -3,4 +3,4 @@ if __name__ == "__main__":
     from add_0 import add
     a = 1
     b = 2
-    print(f"{a:d} + {b:d} = {add(a, b):d}")
+    print("{:d} + {:d} = {:d}".format(int(a), int(b), add(a, b)))
