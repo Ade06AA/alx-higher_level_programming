@@ -11,11 +11,14 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *x, *y, *z;
 
+	if (*head == NULL || (*head)->next == NULL)
+		return (1);
 	x = *head;
 	y = *head;
 	while (x->next != NULL)
 	{
 		z = x;
+		y = *head;
 		while (z->next != NULL)
 		{
 			z = z->next;
