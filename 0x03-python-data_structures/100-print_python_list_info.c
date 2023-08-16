@@ -6,7 +6,7 @@
 * @p: PyObject pointer
 * Return: void
 */
-void print_python_list_info(Python *p)
+void print_python_list_info(PyObject *p)
 {
 	long int size_of_list = Py_SIZE(p), i;
 	PyListObject *list_object = (PyListObject *) p;
