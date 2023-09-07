@@ -9,7 +9,7 @@ class Rectangle:
     rectangle class
     """
 
-    number_of_instance = 0
+    number_of_instances = 0
     print_symbol = '#'
 
     def __init__(self, width=0, height=0):
@@ -18,7 +18,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        type(self).number_of_instance += 1
+        type(self).number_of_instances += 1
 
     def __str__(self):
         """
@@ -26,8 +26,8 @@ class Rectangle:
         """
         if (self.__height == 0 or self.__width == 0):
             return ''
-        return ((self.__width * f'{type(self).print_symbol}' + '\n') * (self.__height - 1) +
-                self.__width * f'{type(self).print_symbol}')
+        return ((self.__width * f'{type(self).print_symbol}' + '\n') * (
+            self.__height - 1) + self.__width * f'{type(self).print_symbol}')
 
     def __repr__(self):
         """
@@ -39,7 +39,7 @@ class Rectangle:
         """
         del
         """
-        type(self).number_of_instance -= 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
 
     @staticmethod

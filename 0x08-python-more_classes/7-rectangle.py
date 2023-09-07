@@ -26,8 +26,8 @@ class Rectangle:
         """
         if (self.__height == 0 or self.__width == 0):
             return ''
-        return ((self.__width * f'{type(self).print_symbol}' + '\n') * (self.__height - 1) +
-                self.__width * f'{type(self).print_symbol}')
+        return ((self.__width * f'{type(self).print_symbol}' + '\n') * (
+            self.__height - 1) + self.__width * f'{type(self).print_symbol}')
 
     def __repr__(self):
         """
