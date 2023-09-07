@@ -2,9 +2,15 @@
 """ a modle """
 
 
-class Square():
+class Square:
+    """
+    class doc
+    """
 
     def __init__(self, size=0):
+        """
+        class initialization
+        """
         self.size = size
 
     def area(self):

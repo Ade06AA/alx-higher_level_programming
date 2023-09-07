@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 """ a modle """
-class Square():
+
+
+class Square:
+    """
+    class doc
+    """
+
     def __init__(self, size=0):
         if type(size) != int:
             raise TypeError("size must be an integer")

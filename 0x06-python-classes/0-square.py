@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 """ a modle """
-class Square():
-    pass
 
+
+class Square:
+    """
+    empty class
+    """
+    pass
