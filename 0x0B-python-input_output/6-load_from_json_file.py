@@ -4,6 +4,8 @@ module doc
 """
 
 myjson = __import__("json")
+
+
 def load_from_json_file(filename):
     """
     larning how to use json in python

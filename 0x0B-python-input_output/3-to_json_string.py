@@ -2,8 +2,9 @@
 """
 module doc
 """
-
 myjson = __import__("json")
+
+
 def to_json_string(my_obj):
     """
     larning how to use json in python
