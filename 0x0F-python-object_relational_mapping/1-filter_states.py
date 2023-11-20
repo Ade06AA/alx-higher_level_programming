@@ -26,7 +26,7 @@ def main():
         for row in content:
             print(row)
     except Exception:
-        raise
+        pass
     finally:
         cur.close()
         conn.close()

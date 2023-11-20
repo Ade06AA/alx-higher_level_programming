@@ -27,7 +27,6 @@ def main():
             print(f"{state.id}: {state.name}")
         session.close()
     except Exception:
-        raise
         pass
 
 

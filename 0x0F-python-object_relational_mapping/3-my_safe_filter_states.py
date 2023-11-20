@@ -29,7 +29,6 @@ def main():
         cur.close()
         conn.close()
     except Exception:
-        raise
         pass
 
 
