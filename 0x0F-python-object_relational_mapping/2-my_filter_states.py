@@ -21,8 +21,8 @@ def main():
         conn = MQL.connect(host=db_host, port=db_port, user=db_user,
                            passwd=db_passwd, db=db_name, charset="utf8")
         cur = conn.cursor()
-        cur.execute(f'SELECT id, name FROM states WHERE name LIKE BINARY\
-                "{db_search.strip()}" ORDER BY id ASC')
+        cur.execute('SELECT id, name FROM states WHERE name LIKE BINARY\
+                "{}" ORDER BY id ASC'.format(db_search.strip()))
         content = cur.fetchall()
         for row in content:
             print(row)
