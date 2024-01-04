@@ -8,7 +8,7 @@ const request = require('request');
 // and when it finish geting the request it can call the function passed to it as the second argument
 request(url, (err, responce, body) => {
   if (err) {
-    console.log(`error: ${err}`);
+    console.log(err);
   } else {
     console.log(`code: ${responce.statusCode}`);
   }
