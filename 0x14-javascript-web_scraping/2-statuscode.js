@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 
 const url = process.argv[2];
 const request = require('request');
@@ -8,9 +8,9 @@ const request = require('request');
 // and when it finish geting the request it can call the function passed to it as the second argument
 request(url, (err, responce, body) => {
   if (err) {
-  console.error(`error: ${err}`);
+    console.log(`error: ${err}`);
   } else {
-  console.log(`code: ${responce.statusCode}`);
+    console.log(`code: ${responce.statusCode}`);
   }
   // console.log(`body: ${body}`);
 });
